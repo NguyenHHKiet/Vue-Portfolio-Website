@@ -5,7 +5,7 @@ import { images } from "../../constants";
 <template>
     <header class="app__header app__flex" id="home">
         <div
-            v-motion
+            v-motion-roll-visible-left
             :initial="{ opacity: 0, x: -100 }"
             :enter="{
                 opacity: 1,
@@ -33,7 +33,7 @@ import { images } from "../../constants";
         </div>
 
         <div
-            v-motion
+            v-motion-pop-visible
             :initial="{ opacity: 0 }"
             :enter="{
                 opacity: 1,
@@ -46,7 +46,7 @@ import { images } from "../../constants";
         >
             <img :src="images.profile" alt="profile_bg" />
             <img
-                v-motion
+                v-motion-pop-visible
                 :initial="{ scale: 0 }"
                 :enter="{
                     scale: 1,
@@ -62,7 +62,7 @@ import { images } from "../../constants";
         </div>
 
         <div
-            v-motion
+            v-motion-pop-visible
             :initial="{ opacity: 0, scale: 0 }"
             :enter="{
                 opacity: 1,

@@ -2,8 +2,43 @@
 import { useState } from "../../composables";
 import MotionWrap from "../../wrapper/MotionWrap.vue";
 
-const [works, setWorks] = useState([]);
-const [filterWork, setFilterWork] = useState([]);
+const items = [
+    {
+        title: "E-commerce Website Frontend",
+        description: "Project name: Building an e-commerce website",
+        projectLink: "https://rjs-asm03-nguyenhhkiet.vercel.app/",
+        codeLink: "https://github.com/NguyenHHKiet/ecommerce_website_frontend",
+        imgUrl: "https://raw.githubusercontent.com/NguyenHHKiet/ecommerce_website_frontend/master/image.png",
+        tags: ["React JS", "Web App"],
+    },
+    {
+        title: "Movie Website Frontend",
+        description: "Project name: Building a movie watching website",
+        projectLink: "https://movie-website-frontend.vercel.app/",
+        codeLink: "https://github.com/NguyenHHKiet/movie_website_frontend",
+        imgUrl: "https://raw.githubusercontent.com/NguyenHHKiet/movie_website_frontend/master/image.png",
+        tags: ["React JS", "Web App"],
+    },
+    {
+        title: "Devcamper API",
+        description:
+            "Project name: Create a real-world backend for a bootcamp directory app",
+        projectLink: "https://devcamper-api-one.vercel.app/",
+        codeLink: "https://github.com/NguyenHHKiet/devcamper-api",
+        imgUrl: "https://i.ytimg.com/vi/EsUL2bfKKLc/sddefault.jpg",
+        tags: ["Node JS"],
+    },
+    {
+        title: "REST API SERVER BOUTIQUE APPLE",
+        description: "Project name: REST API SERVER BOUTIQUE APPLE",
+        projectLink: "https://server-boutique-tau.vercel.app/",
+        codeLink: "https://github.com/NguyenHHKiet/server-boutique",
+        imgUrl: "https://i.ytimg.com/vi/EsUL2bfKKLc/sddefault.jpg",
+        tags: ["Node JS"],
+    },
+];
+
+const [filterWork, setFilterWork] = useState([...items]);
 const [activeFilter, setActiveFilter] = useState("All");
 
 const handleWorkFilter = (item) => {
@@ -11,16 +46,16 @@ const handleWorkFilter = (item) => {
 
     setTimeout(() => {
         if (item === "All") {
-            setFilterWork(works);
+            setFilterWork(items);
         } else {
-            setFilterWork(works.filter((work) => work.tags.includes(item)));
+            setFilterWork(items.filter((work) => work.tags.includes(item)));
         }
     }, 500);
 };
 </script>
 
 <template>
-    <MotionWrap :id="'work'">
+    <MotionWrap :id="'work'" :className="'app__works app__primarybg'">
         <h2 class="head-text">My Creative <span>Portfolio</span> Section</h2>
 
         <div class="app__work-filter">
@@ -42,30 +77,15 @@ const handleWorkFilter = (item) => {
             </div>
         </div>
 
-        <div
-            v-motion
-            :initial="{
-                opacity: 0,
-                y: 100,
-            }"
-            :enter="{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 500, delay: 500 },
-            }"
-            :leave="{
-                y: -100,
-                opacity: 0,
-            }"
-            class="app__work-portfolio"
-        >
+        <div class="app__work-portfolio">
             <div
+                v-motion-slide-visible-bottom
                 class="app__work-item app__flex"
-                v-for="(work, index) in ['a', 'b', 'c']"
+                v-for="(work, index) in filterWork"
                 :key="index"
             >
                 <div class="app__work-img app__flex">
-                    <img :src="as" :alt="work.name" />
+                    <img :src="work.imgUrl" :alt="work.name" />
                     <div
                         v-motion
                         :initial="{ opacity: 0 }"
@@ -82,7 +102,11 @@ const handleWorkFilter = (item) => {
                         }"
                         class="app__work-hover app__flex"
                     >
-                        <a target="_blank" rel="noreferrer">
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            :href="work.projectLink"
+                        >
                             <div
                                 v-motion
                                 :initial="{ scale: 1 }"
@@ -98,7 +122,11 @@ const handleWorkFilter = (item) => {
                                 <v-icon name="bi-eye-fill" />
                             </div>
                         </a>
-                        <a target="_blank" rel="noreferrer">
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            :href="work.codeLink"
+                        >
                             <div
                                 v-motion
                                 :initial="{ scale: 1 }"
@@ -116,12 +144,12 @@ const handleWorkFilter = (item) => {
                     </div>
                 </div>
                 <div class="app__work-content app__flex">
-                    <h4 class="bold-text">{work.title}</h4>
+                    <h4 class="bold-text">{{ work.title }}</h4>
                     <p class="p-text" style="margin-top: 10px">
-                        {work.description}
+                        {{ work.description }}
                     </p>
                     <div class="app__work-tag app__flex">
-                        <p class="p-text">{work.tags[0]}</p>
+                        <p class="p-text">{{ work.tags[0] }}</p>
                     </div>
                 </div>
             </div>

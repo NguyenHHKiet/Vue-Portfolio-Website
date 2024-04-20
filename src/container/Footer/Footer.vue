@@ -28,19 +28,15 @@ const handleSubmit = () => {
         email: formData.email,
         message: formData.message,
     };
-
-    client
-        .create(contact)
-        .then(() => {
-            setLoading(false);
-            setIsFormSubmitted(true);
-        })
-        .catch((err) => console.log(err));
+    console.log(contact);
+    setTimeout(() => {
+        setLoading(false);
+    }, 2000);
 };
 </script>
 
 <template>
-    <MotionWrap :id="'footer'">
+    <MotionWrap :id="'contact'" :className="'app__footer app__whitebg'">
         <h2 class="head-text">Take a coffee & chat with me</h2>
 
         <div class="app__footer-cards">
@@ -87,7 +83,7 @@ const handleSubmit = () => {
                     :onChange="handleChangeInput"
                 />
             </div>
-            <button type="button" class="p-text" @onClick="handleSubmit">
+            <button type="button" class="p-text" @click="handleSubmit">
                 {{ !loading ? "Send Message" : "Sending..." }}
             </button>
         </div>

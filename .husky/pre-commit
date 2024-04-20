@@ -1,1 +1,6 @@
-npx lint-staged
+npx lint-staged || (
+    echo '❌ PRE-COMMIT HOOK: Failed...'
+    false
+)
+
+echo '✅ PRE-COMMIT HOOK: Passed!'

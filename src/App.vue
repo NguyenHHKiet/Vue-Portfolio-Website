@@ -2,7 +2,7 @@
 import "./App.scss";
 
 import { Navbar } from "./components";
-import { Header, About, Work, Footer } from "./container";
+import { Header, About, Work, Footer, Skills } from "./container";
 </script>
 
 <template>
@@ -11,6 +11,7 @@ import { Header, About, Work, Footer } from "./container";
         <Header />
         <About />
         <Work />
+        <Skills />
         <Footer />
     </div>
 </template>

@@ -15,7 +15,9 @@ const props = defineProps({
         :class="`app__container ${classNames}`"
     >
         <div class="app__wrapper app__flex">
-            <slot />
+            <div class="app__wrapper app__flex">
+                <slot />
+            </div>
             <div class="copyright">
                 <p class="p-text">@2024 Shell</p>
                 <p class="p-text">All rights reserved</p>

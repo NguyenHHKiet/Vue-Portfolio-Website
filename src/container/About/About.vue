@@ -1,12 +1,35 @@
 <script setup>
 import { useState } from "../../composables";
 import MotionWrap from "../../wrapper/MotionWrap.vue";
+import { images } from "../../constants";
 
 const [abouts, setAbouts] = useState([]);
+const items = [
+    {
+        title: "Frontend Development",
+        imgUrl: images.about01,
+        description: "I am a good frontend",
+    },
+    {
+        title: "Fullstack Development",
+        imgUrl: images.about02,
+        description: "I am a good fullstack",
+    },
+    {
+        title: "Mobile Development",
+        imgUrl: images.about03,
+        description: "I am a good react native",
+    },
+    {
+        title: "NodeJS Development",
+        imgUrl: images.about04,
+        description: "I am a good node.js",
+    },
+];
 </script>
 
 <template>
-    <MotionWrap :id="'about'">
+    <MotionWrap :id="'about'" :className="'app__whitebg app__about'">
         <h2 class="head-text">
             I know that <span>Good Apps</span>
             <br />
@@ -15,19 +38,15 @@ const [abouts, setAbouts] = useState([]);
             and <span>Good Life</span>.
         </h2>
 
-        <div class="app__profiles">
+        <div v-motion-slide-visible-bottom class="app__profiles">
             <div
-                v-motion
                 :initial="{ opacity: 1 }"
                 :hovered="{ scale: 1.1 }"
                 :enter="{
                     transition: { duration: 500 },
                     scale: 1,
                 }"
-                v-for="(about, index) in [
-                    { title: 'About', imgUrl: 'img', description: 'about' },
-                    { title: 'Index', imgUrl: 'img', description: 'index' },
-                ]"
+                v-for="(about, index) in items"
                 :key="about.title + index"
                 class="app__profile-item"
             >
