@@ -36,6 +36,22 @@ const items = [
         imgUrl: "https://i.ytimg.com/vi/EsUL2bfKKLc/sddefault.jpg",
         tags: ["Node JS"],
     },
+    {
+        title: "Pet management application",
+        description: "Project name: Pet management application",
+        projectLink: "https://pet-management-application.vercel.app/",
+        codeLink: "https://github.com/NguyenHHKiet/pet_management_application",
+        imgUrl: "https://github.com/NguyenHHKiet/pet_management_application/blob/main/image.png?raw=true",
+        tags: ["Web App", "HTML", "CSS", "JavaScript"],
+    },
+    {
+        title: "BOOKSTORE-MANAGEMENT-TOPIC",
+        description: "Project of The Competing Group",
+        projectLink: "https://hbtrung.pythonanywhere.com/",
+        codeLink: "https://github.com/NguyenHHKiet/BOOKSTORE-MANAGEMENT-TOPIC",
+        imgUrl: "https://github.com/NguyenHHKiet/BOOKSTORE-MANAGEMENT-TOPIC/raw/main/image.jpg",
+        tags: ["Flask", "Python"],
+    },
 ];
 
 const [filterWork, setFilterWork] = useState([...items]);
@@ -65,6 +81,8 @@ const handleWorkFilter = (item) => {
                     'Mobile App',
                     'React JS',
                     'Node JS',
+                    'Java',
+                    'Python',
                     'All',
                 ]"
                 :key="index"
