@@ -11,7 +11,7 @@ const [toggle, setToggle] = useState(false);
         <div class="app__navbar-logo">
             <img src="../../assets/vue.svg" alt="logo" />
         </div>
-        <ul className="app__navbar-links">
+        <ul class="app__navbar-links">
             <li
                 v-for="(item, index) in items"
                 :key="`link-${index}`"

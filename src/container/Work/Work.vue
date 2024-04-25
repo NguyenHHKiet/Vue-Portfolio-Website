@@ -71,7 +71,7 @@ const handleWorkFilter = (item) => {
 </script>
 
 <template>
-    <MotionWrap :id="'work'" :className="'app__works app__primarybg'">
+    <MotionWrap :id="'work'" :class="'app__works app__primarybg'">
         <h2 class="head-text">My Creative <span>Portfolio</span> Section</h2>
 
         <div class="app__work-filter">

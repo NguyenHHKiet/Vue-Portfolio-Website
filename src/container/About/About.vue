@@ -29,7 +29,7 @@ const items = [
 </script>
 
 <template>
-    <MotionWrap :id="'about'" :className="'app__whitebg app__about'">
+    <MotionWrap :id="'about'" :class="'app__whitebg app__about'">
         <h2 class="head-text">
             I know that <span>Good Apps</span>
             <br />
@@ -51,10 +51,10 @@ const items = [
                 class="app__profile-item"
             >
                 <img :src="about.imgUrl" :alt="about.title" />
-                <h2 className="bold-text" style="margin-top: 20px">
+                <h2 class="bold-text" style="margin-top: 20px">
                     {{ about.title }}
                 </h2>
-                <p className="p-text" style="margin-top: 10px">
+                <p class="p-text" style="margin-top: 10px">
                     {{ about.description }}
                 </p>
             </div>

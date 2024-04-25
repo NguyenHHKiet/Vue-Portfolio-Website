@@ -1,10 +1,8 @@
 <script setup>
-import { toRefs } from "vue";
-
+import { NavigationDots, SocialMedia } from "../components";
 // ✅ Declare props at the top level
 const props = defineProps({
     id: { type: String },
-    classNames: { type: String },
 });
 </script>
 
@@ -12,10 +10,12 @@ const props = defineProps({
     <div
         v-motion-slide-visible-bottom
         :id="id"
-        :class="`app__container ${classNames}`"
+        class="app__container"
+        style="flex-direction: row; align-items: center"
     >
+        <SocialMedia />
         <div class="app__wrapper app__flex">
-            <div class="app__wrapper app__flex">
+            <div :class="`app__wrapper app__flex`">
                 <slot />
             </div>
             <div class="copyright">
@@ -23,5 +23,6 @@ const props = defineProps({
                 <p class="p-text">All rights reserved</p>
             </div>
         </div>
+        <NavigationDots :active="id" />
     </div>
 </template>

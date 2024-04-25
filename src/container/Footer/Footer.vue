@@ -36,7 +36,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-    <MotionWrap :id="'contact'" :className="'app__footer app__whitebg'">
+    <MotionWrap :id="'contact'" :class="'app__footer app__whitebg'">
         <h2 class="head-text">Take a coffee & chat with me</h2>
 
         <div class="app__footer-cards">
