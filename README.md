@@ -14,7 +14,7 @@ Welcome to my GitHub portfolio! I'm a passionate .NET developer with a strong fo
 - **ERP System Development:** Contributed to developing and maintaining ERP modules, focusing on improving performance and functionality. We achieved a 20% increase in query performance by optimizing SQL.
 - **Web Development:** Built and maintained multiple .NET websites and ERP module subsystems using ASP.NET MVC, jQuery, HTML, and CSS, with a track record of delivering timely high-quality solutions.
 - **Front-End Development:** Developed interactive and responsive user interfaces using ReactJS and VueJS, enhancing user experience and application performance.
-- **Data Analysis and Integration:** Utilized tools like WorkbookDesigner, ASOFTExcelBase, and ASOFTEnvironment for managing and integrating data within C# projects.
+- **Data Analysis and Integration:** Utilized tools like WorkbookDesigner, ExcelBase, and Environment for managing and integrating data within C# projects.
 
 ## Learning and Growth
 
