@@ -25,8 +25,8 @@ Welcome to my GitHub portfolio! I'm a passionate .NET developer with a strong fo
 
 Feel free to reach out to me for collaboration, project inquiries, or to connect:
 
-- **Email:** [your-email@example.com]
-- **LinkedIn:** [your-linkedin-profile]
-- **Portfolio:** [your-portfolio-link]
+- **Email:** nhoangkiet35@gmail.com
+- **LinkedIn:** [HoangKiet NguyenHuu](https://www.linkedin.com/in/qliphort-shell/)
+- **Portfolio:** [qliphort-shell](https://vue-portfolio-website-eight.vercel.app/)
 
 Thank you for visiting my GitHub profile!
