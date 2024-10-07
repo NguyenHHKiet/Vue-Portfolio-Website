@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "E-commerce Website Frontend",
+    "description": "Project name: Building an e-commerce website",
+    "projectLink": "https://rjs-asm03-nguyenhhkiet.vercel.app/",
+    "codeLink": "https://github.com/NguyenHHKiet/ecommerce_website_frontend",
+    "imgUrl": "https://raw.githubusercontent.com/NguyenHHKiet/ecommerce_website_frontend/master/assets/images/banner.png",
+    "tags": ["React JS", "Web App"]
+  },
+  {
+    "id": 2,
+    "title": "Movie Website Frontend",
+    "description": "Project name: Building a movie watching website",
+    "projectLink": "https://movie-website-frontend.vercel.app/",
+    "codeLink": "https://github.com/NguyenHHKiet/movie_website_frontend",
+    "imgUrl": "https://raw.githubusercontent.com/NguyenHHKiet/movie_website_frontend/master/image.png",
+    "tags": ["React JS", "Web App"]
+  },
+  {
+    "id": 3,
+    "title": "Devcamper API",
+    "description": "Project name: Create a real-world backend for a bootcamp directory app",
+    "projectLink": "https://devcamper-api-one.vercel.app/",
+    "codeLink": "https://github.com/NguyenHHKiet/devcamper-api",
+    "imgUrl": "https://i.ytimg.com/vi/EsUL2bfKKLc/sddefault.jpg",
+    "tags": ["Node JS"]
+  },
+  {
+    "id": 4,
+    "title": "REST API SERVER BOUTIQUE APPLE",
+    "description": "Project name: REST API SERVER BOUTIQUE APPLE",
+    "projectLink": "https://server-boutique-tau.vercel.app/",
+    "codeLink": "https://github.com/NguyenHHKiet/server-boutique",
+    "imgUrl": "https://i.ytimg.com/vi/EsUL2bfKKLc/sddefault.jpg",
+    "tags": ["Node JS"]
+  },
+  {
+    "id": 5,
+    "title": "Pet management application",
+    "description": "Project name: Pet management application",
+    "projectLink": "https://pet-management-application.vercel.app/",
+    "codeLink": "https://github.com/NguyenHHKiet/pet_management_application",
+    "imgUrl": "https://github.com/NguyenHHKiet/pet_management_application/blob/main/image.png?raw=true",
+    "tags": ["Web App", "HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 6,
+    "title": "BOOKSTORE-MANAGEMENT-TOPIC",
+    "description": "Project of The Competing Group",
+    "projectLink": "https://hbtrung.pythonanywhere.com/",
+    "codeLink": "https://github.com/NguyenHHKiet/BOOKSTORE-MANAGEMENT-TOPIC",
+    "imgUrl": "https://github.com/NguyenHHKiet/BOOKSTORE-MANAGEMENT-TOPIC/raw/main/image.jpg",
+    "tags": ["Flask", "Python"]
+  }
+]

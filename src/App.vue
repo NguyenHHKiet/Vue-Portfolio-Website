@@ -6,14 +6,14 @@ import { Header, About, Work, Footer, Skills } from "./container";
 </script>
 
 <template>
-    <div class="app">
-        <Navbar />
-        <Header />
-        <About />
-        <Work />
-        <Skills />
-        <Footer />
-    </div>
+  <div class="app">
+    <Navbar />
+    <Header />
+    <About />
+    <Work />
+    <Skills />
+    <Footer />
+  </div>
 </template>
 
 <style scoped></style>
